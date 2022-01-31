@@ -6,7 +6,7 @@ const Post = ({ post, deletePost }) => {
       <h2>{post.title}</h2>
       <p>{post.content}</p>
       <Link to={`/edit/${post._id}`}>
-        <button type="button">edit</button>
+        <button type="button">EDIT</button>
       </Link>
       <button
         type="button"
@@ -14,7 +14,7 @@ const Post = ({ post, deletePost }) => {
           deletePost(post._id);
         }}
       >
-        delete
+        DELETE
       </button>
       <br />
     </div>
